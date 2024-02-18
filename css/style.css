@@ -1,0 +1,236 @@
+  * { 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+
+} 
+
+
+.logo img {
+  max-width: 60px; 
+  } 
+
+
+/* Agrega este código CSS a tu archivo style.css o crea uno nuevo */
+
+/* Estilo de la barra lateral */
+.logo {
+  background-color: #333;
+  color: #fff;
+}
+
+.logo-nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-link span , a {
+  color: #ffffffb4;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+
+/* Animación y estilo de los iconos */
+.nav-link i  {
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.9s ease;
+  color: #ffffffb4;
+}
+
+.nav-link:hover i {
+  transform: scale(1.2) rotate(360deg);
+}
+
+
+
+
+
+
+/* Menú hamburguesa */
+.navbar-toggler {
+  display: none; /* Oculta el botón de menú predeterminado de Bootstrap */
+}
+
+@media (max-width: 768px) {
+  /* Mostrar el menú hamburguesa en pantallas pequeñas */
+  .navbar-toggler {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* Ocultar el logotipo en pantallas pequeñas */
+  .logo {
+    display: none;
+  }
+
+  /* Aumentar el tamaño de la fuente para una mejor legibilidad */
+  .nav-link {
+    font-size: 16px;
+  }
+
+  /* Añadir menú hamburguesa */
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  /* Añadir botón de cerrar */
+  .navbar-collapse .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* Botón de cerrar */
+.close-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mostrar el botón de cerrar en pantallas pequeñas */
+  .navbar-collapse .close-btn {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Mostrar el menú hamburguesa en pantallas pequeñas */
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.tasks-list {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.task {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.task:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-checkbox {
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.task-label {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #e74a3b;
+
+  .task-description {
+    margin-top: 0.5rem;
+    color: #999;
+  }
+  
+  .btn-icon {
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid #4e73df;
+    color: #4e73df;
+  }
+  
+  .btn-icon:hover {
+    background-color: #4e73df;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3b5998;
+    color: #fff;
+  }
+}
+
+
+
+
+.bg-col {
+  background-color: #3F51B5;;
+}
+
+
+
+
+
+
+
+
+
+

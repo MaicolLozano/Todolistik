@@ -1,0 +1,73 @@
+    // Validar los datos del formulario
+    if (empty($name) || empty($email) || empty($password) || empty($confirm_password)) {
+        $error_message = 'Por favor, complete todos los campos.';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_message = 'Ingrese una dirección de correo electrónico válida.';
+    } elseif ($password !== $confirm_password) {
+        $error_message = 'Las contraseñas no coinciden.';
+    } else {
+        // Verificar si el correo electrónico ya está registrado
+        $query = "SELECT * FROM users WHERE email = '$email'";
+        $result = mysqli_query($conn, $query);
+        if (mysqli_num_rows($result) > 0) {
+            $error_message = 'El correo electrónico ya está registrado.';
+        } else {
+            // Hash de la contraseña
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+            // Insertar el nuevo usuario en la base de datos
+            $query = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$hashed_password')";
+            mysqli_query($conn, $query);
+
+            // Redirigir al usuario a la página de inicio de sesión
+            header('Location: login.php');
+            exit();
+        }
+    }
+}
+?> 
+
+
+
+
+
+
+
+
+--------------------------------
+    <div class="container mt-4">
+        <h2>¡Bienvenido, <?php echo $user['name']; ?>!</h2>
+        <h3>Tu Todolist:</h3>
+
+        <div class="card-deck col-md-10 ">
+            <?php foreach ($tasks as $task) : ?>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $task['title']; ?></h5>
+                        <p class="card-text"><?php echo $task['description']; ?></p>
+                        <a href="php/edit_task.php?id=<?php echo $task['id']; ?>" class="btn btn-primary">Editar</a>
+                        <a href="php/delete_task.php?id=<?php echo $task['id']; ?>" class="btn btn-danger">Eliminar</a>
+                    </div>
+                </div> <br>
+            <?php endforeach; ?>
+        </div>
+
+        <div class="mt-4">
+            <a href="php/add_task.php" class="btn btn-primary">Agregar tarea</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    #004f83
+
+
+    #0067ac
