@@ -68,7 +68,7 @@ if (isset($_POST['register'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registro</title>
+    <title>Registration</title>
                 <!-- Required meta tags -->
                 <meta charset="utf-8" />
         <meta
@@ -78,7 +78,7 @@ if (isset($_POST['register'])) {
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style_2.css">
-    <!-- Link a la fuente Poppins -->
+    <!-- Link to Poppins font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
   
     <style>
@@ -89,7 +89,7 @@ if (isset($_POST['register'])) {
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-4">Registro</h2>
+        <h2 class="mt-4">Sing Up</h2>
 
         <?php if (isset($error_message)) : ?>
             <div class="alert alert-danger mt-4"><?php echo $error_message; ?></div>
@@ -97,27 +97,27 @@ if (isset($_POST['register'])) {
 
         <form method="POST" action="">
             <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
             </div>
             <div class="form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
             </div>
             <div class="form-group">
-                <label for="confirm_password">Confirmar contraseña:</label>
-                <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar contraseña" required>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="register">Registrarse</button>
-            <!-- <a href="login.php" class="btn btn-primary" role="button">Iniciar session</a> -->
+            <button type="submit" class="btn btn-primary" name="register">Register</button>
+            <!-- <a href="login.php" class="btn btn-primary" role="button">Log In</a> -->
             
 
         </form>
-        <p class="mt-3">Ya tienes una cuenta? <a href="login.php">Inicia sesión</a></p>
+        <p class="mt-3">Already have an account? <a href="login.php">Log In</a></p>
     </div>
 
     <script src="../js/jquery.min.js"></script>

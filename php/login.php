@@ -39,7 +39,7 @@ if (isset($_POST['login'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Iniciar sesión</title>
+    <title>Login</title>
 
             <!-- Required meta tags -->
             <meta charset="utf-8" />
@@ -50,7 +50,7 @@ if (isset($_POST['login'])) {
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style_2.css">
-    <!-- Link a la fuente Poppins -->
+    <!-- Link to Poppins font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
   
     <style>
@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-5">Iniciar sesión</h2>
+        <h2 class="mt-5">Login</h2>
 
         <?php if (isset($error_message)) : ?>
             <div class="alert alert-danger mt-4"><?php echo $error_message; ?></div>
@@ -69,17 +69,17 @@ if (isset($_POST['login'])) {
 
         <form method="POST" action="">
             <div class="mb-3 form-group">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="login">Iniciar sesión</button>
-            <!-- <a href="register.php" class="btn btn-primary" role="button">Registrarse</a> -->
+            <button type="submit" class="btn btn-primary" name="login">Login</button>
+            <!-- <a href="register.php" class="btn btn-primary" role="button">Register</a> -->
         </form>
-        <p class="mt-3">No tienes una cuenta? <a href="register.php">Regístrate</a></p>
+        <p class="mt-3">Don't have an account? <a href="register.php">Sign Up</a></p>
     </div>
 
     <script src="../js/jquery.min.js"></script>

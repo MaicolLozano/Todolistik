@@ -25,17 +25,19 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 ?>
 
-<?php include 'template/navbar.php'; ?>
+<?php include 'navbar/navbar.php'; ?>
  <style>
 
 .container {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
+
 }
 
 h2, h3 {
   color: #3F51B5;
+  font-size: 24px; /* Ajusta el tamaño de la letra de los encabezados h2 y h3 a 24px */
 }
 
 .card-deck {
@@ -92,6 +94,15 @@ h2, h3 {
   background: #c62828; /* Cambia el color de fondo cuando se pasa el mouse por encima */
 }
 
+.card-title {
+    font-size: 20px; /* Ajusta el tamaño de la letra del título de la tarjeta a 20px */
+}
+
+.card-text {
+    font-size: 16px; /* Ajusta el tamaño de la letra del texto de la tarjeta a 16px */
+}
+
+
 @media (max-width: 768px) {
   .card-deck {
       flex-direction: column;
@@ -105,28 +116,27 @@ h2, h3 {
 
 
  </style>
+ <link rel="stylesheet" href="css/style.css">
 <body>
 <div class="container mt-4">
-        <h2>¡Bienvenido, <?php echo $user['name']; ?>!</h2>
-        <h3>Tu Todolist:</h3>
+        <h2>¡Welcome, <?php echo $user['name']; ?>!</h2>
+        <h3>Your Todolist:</h3>
 
         <div class="card-deck col-md-10 ">
         <?php foreach ($tasks as $task) : ?>
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $task['title']; ?></h5>
-                        <p class="card-text"><?php echo $task['description']; ?></p>
-                        <a href="php/edit_task.php?id=<?php echo $task['id']; ?>" class="btn btn-primary">Editar</a>
-                        <a href="php/delete_task.php?id=<?php echo $task['id']; ?>" class="btn btn-danger">Eliminar</a>
+                        <p class="card-text"><?php echo $task['description']; ?></p> <br><br>
+                        <a href="php/edit_task.php?id=<?php echo $task['id']; ?>" class="btn btn-primary">Edit</a>
+                        <a href="php/delete_task.php?id=<?php echo $task['id']; ?>" class="btn btn-danger">Delete</a>
                     </div>
                 </div> <br>
             <?php endforeach; ?>
         </div>
 
         <div class="mt-4">
-            <a href="php/add_task.php" class="btn btn-primary">Agregar tarea</a>
+            <a href="php/add_task.php" class="btn btn-primary">Add Task</a>
         </div>
-    </div> 
-    <?php include 'template/footer.php'; ?> 
-<!-- </body>
-</html> -->
+    </div>
+    <?php include 'navbar/footer.php'; ?> 
