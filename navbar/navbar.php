@@ -3,17 +3,29 @@
 <head>
   <title>Todolist</title>
   <!-- Link Styles -->
-  <link rel="stylesheet" href="navbar/style.css">
+  <link rel="stylesheet" href="../navbar/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="shortcut icon" href="img/favi.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+  <style>
+    .sidebar {
+      background-color : #3F51B5;
+    }
+
+    .sidebar li a {
+      background-color :#3F51B5;
+    }
+    .home-section {
+      background-color : white ;
+    }
+  </style>
   <div class="sidebar">
     <div class="logo_details">
-      <i class="bx bxl-audible icon"></i>
-      <div class="logo_name">Todolist</div>
+      <!-- <i class="bx bxl-audible icon"></i> -->
+      <div class="logo_name">TODOLISTIK</div>
       <i class="bx bx-menu" id="btn"></i>
     </div>
     <ul class="nav-list">

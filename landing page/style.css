@@ -40,7 +40,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: black;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -428,15 +428,16 @@ body {
     list-style: none;
   }
   
-  .features-section h3 {
-    margin-bottom: 10px !important;
+  .features-section p {
+    margin-left: 10px !important;
 }
 
-.features-section .features-list li h3 {
+.features-section .features-list li p {
   margin-bottom: 10px !important;
 }
 
 
-.logo {
-  width: 200px;
+.logo h1 {
+  width: 100px;
+  font-weight: bold;
 }

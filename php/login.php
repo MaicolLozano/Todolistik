@@ -3,7 +3,7 @@ require_once 'config.php';
 session_start();
 // Verificar si el usuario ya ha iniciado sesión
 if (isset($_SESSION['user_id'])) {
-    header('Location: ../index.php');
+    header('Location: dashboard.php');
     exit();
 }
 
@@ -24,7 +24,7 @@ if (isset($_POST['login'])) {
             if (password_verify($password, $user['password'])) {
                 // Iniciar sesión exitosamente
                 $_SESSION['user_id'] = $user['id'];
-                header('Location: ../index.php');
+                header('Location: dashboard.php');
                 exit();
             } else {
                 $error_message = 'Contraseña incorrecta.';

@@ -17,7 +17,7 @@ if (isset($_POST['add_task'])) {
     $query = "INSERT INTO tasks (user_id, title, description) VALUES ('$user_id', '$task', '$description')"; // Modificación
     mysqli_query($conn, $query);
 
-    header('Location: ../index.php');
+    header('Location: dashboard.php');
     exit();
 }
 ?>

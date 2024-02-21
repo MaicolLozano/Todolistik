@@ -53,7 +53,7 @@ body{
 .sidebar .logo_details .logo_name{
   color:var(--color-white);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 300;
   opacity: 0;
   transition: all .5s ease;
 }
@@ -300,3 +300,4 @@ body{
   left:250px;
   width: calc(100% - 250px);
 }
+

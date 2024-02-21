@@ -16,6 +16,6 @@ if (isset($_GET['id'])) {
     $query = "DELETE FROM tasks WHERE id = '$task_id' AND user_id = '$user_id'";
     mysqli_query($conn, $query);
 
-    header('Location: ../index.php');
+    header('Location: dashboard.php');
     exit();
 }

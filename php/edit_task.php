@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
         $query = "UPDATE tasks SET title = '$edited_task', description = '$edited_description' WHERE id = '$task_id' AND user_id = '$user_id'";
         mysqli_query($conn, $query);
 
-        header('Location: ../index.php');
+        header('Location: dashboard.php');
         exit();
     }
 }
@@ -71,7 +71,7 @@ if (isset($_GET['id'])) {
             <button type="submit" class="btn btn-primary" name="edit_task">Guardar cambios</button>
         </form>
 
-       <a class="mt-3" href="../index.php">Volver al tablero</a>
+       <a class="mt-3" href="dashboard.php">Volver al tablero</a>
     </div>
 
     <!-- ... -->

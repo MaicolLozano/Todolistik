@@ -3,7 +3,7 @@ require_once 'config.php';
 session_start();
 // Verificar si el usuario ya ha iniciado sesión
 if (isset($_SESSION['user_id'])) {
-    header('Location: ../index.php');
+    header('Location: dashboard.php');
     exit();
 }
 

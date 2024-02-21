@@ -18,10 +18,23 @@
   <link rel="stylesheet" href="landing page/style.css">
 </head>
 <body>
+  <style>
+    .logo h1 {
+  font-weight: bold;
+  margin-bottom: 20px; 
+  color: black;
+   }
+.features-section p {
+  margin-left: 80px;
+}
+  </style>
   <header>
     <nav class="navbar">
       <a href="#">
-        <img src="logo.png" alt="Logo de la aplicación" class="logo">
+<div class="logo">
+  <h1 class="logo">TODOLISTIK</h1>
+</div>
+
       </a>
       <ul class="nav-items">
         <li><a href="#">Inicio</a></li>
@@ -29,7 +42,7 @@
         <li><a href="#">Precios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
-      <a href="../index.php" class="try-me-button">Pruébalo Gratis</a>
+      <a href="php/dashboard.php" class="try-me-button">Pruébalo Gratis</a>
     </nav>
   </header>
 
@@ -38,7 +51,7 @@
       <div class="container">
         <h1>Organiza tu vida con estilo</h1>
         <p>Nuestra aplicación web de lista de tareas te ayuda a mantenerte organizado y productivo.</p>
-        <a href="../index.php" class="button">Empezar Ahora</a>
+        <a href="php/dashboard.php" class="try-me-button">Empezar Ahora</a>
       </div>
     </section>
 
@@ -89,7 +102,7 @@
     <section class="call-to-action">
       <div class="container">
         <h2>¿Listo para empezar a organizar tu vida?</h2>
-        <a href="../index.php" class="button">Pruébalo Gratis</a>
+        <a href="php/dashboard.php" class="button">Pruébalo Gratis</a>
       </div>
     </section>
   </main>
@@ -99,7 +112,10 @@
   <div class="container">
     <div class="footer-top">
       <div class="logo-container">
-        <img src="logo.png" alt="Logo de la aplicación" class="logo">
+        <div class="logo">
+          <h1 class="logo">TODOLISTIK</h1>
+        </div>
+        
         <p class="frase">Enfócate en lo importante y alcanza <br> tus metas.</p>
       </div>
       <div class="footer-links-container">
