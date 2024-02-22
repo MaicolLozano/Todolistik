@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Todolist</title>
+  <title>Todolistik</title>
   <!-- Link Styles -->
   <link rel="stylesheet" href="../navbar/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
