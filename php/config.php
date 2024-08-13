@@ -5,10 +5,6 @@ $db_name = 'todolistapp';
 $db_user = 'root';
 $db_password = '';
 
-// $db_host = 'sql204.infinityfree.com';
-// $db_name = 'if0_35962665_todolistapp';
-// $db_user = 'if0_35962665';
-// $db_password = 'ZJfirSg9aJ';
 
 
 // Conexión a la base de datos
